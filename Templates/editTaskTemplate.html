@@ -1,0 +1,11 @@
+<section class="editTaskTemplate">
+	<h2>{{group}}</h2>
+	
+  <ul class="templateTaskItems">
+    {{#each groupArray}}
+      <li>{{this}}<input class="deleteThisTaskButton" type="button" value="delete"></li>
+    {{/each}}
+  </ul>
+	<!-- <button id ='edit{{group}}' class="editTaskButton">Edit</button><button id ='delete{{group}}' class="editTaskButton">Delete</button> -->
+
+</section>

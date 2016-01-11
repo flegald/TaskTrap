@@ -1,0 +1,17 @@
+
+<section class="editEmployeeTemplate">
+	<form class="editEmployeeForm">
+		<p>Name:</p>
+		<input class="editName" type = "text" value = {{employeeName}}>
+		<p>ID #:</p>
+		<input class = "newEmployeeNumber" type = "text" value = {{employeeNumber}}>
+		<p>Manager?</p>
+		<select class="newManagerAccess">
+			<option value = "yes">Yes</option>
+			<option value = "no">No</option>
+		</select>
+		<input type="button" id={{employeeName}} class="finishEdit" value="Update">
+		<input type="button" id={{employeeName}} class="finishDelete" value="Delete">
+	</form>
+
+</section>

@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Task Trapper</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+  <link href="https://fonts.googleapis.com/css?family=Muli:400,300|Abel" rel="stylesheet" type="text/css"/>
+
+  <link href="Css/animate.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="Css/normalize.css" />
+  <link rel="stylesheet" href="Css/base.css" />
+  <link rel="stylesheet" href="Css/layout.css" />
+  <link rel="stylesheet" href="Css/modules.css" />
+  <link rel="stylesheet" href="Css/state.css" />
+</head>
+<body>
+<!-- SIGN ON PAGE********************************* -->
+  <div id="signIn">
+    <header>
+      <img class="treePic" src="img/tree.png" />
+      <h1>SIGN IN</h1>
+    </header>
+    <section>
+      <p id="signInAlert">Please enter a valid ID</p>
+      <p id="wrongIdAlert">Please enter a valid ID</p>
+
+      <h2>Enter your employee ID number</h2>
+      <input type="number" id="empForm" name="number"/>
+      <br />
+      <button id="signInButton">SUBMIT</button>
+     <!--  <button id="byPassButton">Bypass</button>
+      <button id="byPassManagerButton">Manager</button> -->
+
+    </section>
+  </div>
+
+
+<!-- TASK LIST PAGE************************************* -->
+  <div id="taskList">
+    <header>
+      <img class="treePic" src="img/tree.png" />
+      <p class="loggedIn"></p>
+      <h1 class="locate">TASK LISTS</h1>
+      <div class="navToSignIn navButtonContainerL">
+        <img class="navButton" src="img/navContainL.png" />
+        <p class="navButtonTextL">Sign Out</p>
+      </div>
+    </header>
+    <section>
+      <p id="selectTaskListAlert">Please select a task list</p>
+      <h2>Select Task Lists</h2>
+      <form class="taskChoice">
+      </form>
+        <button id="taskChoiceButton">Submit</button>
+    </section>
+  </div>
+
+<!-- MANAGER PAGE********************************** -->
+  <div id="bossPage" class="bossPage">
+    <header>
+      <img class="treePic" src="img/tree.png" />
+      <p class="loggedIn"></p>
+      <h1 class="locate">MANAGER HUB</h1>
+      <div class="navToSignIn navButtonContainerL">
+        <img class="navButton" src="img/navContainL.png" />
+        <p class="navButtonTextL">Sign Out</p>
+      </div>
+      <div class="navToTaskLists navButtonContainerR">
+        <img class="navButton" src="img/navContainR.png" />
+        <p id="exitManager" class="navButtonTextR">Task Lists</p>
+      </div>
+    </header>
+      <section id="managerListSection">
+       <ul id="managerTabList">
+        <li class="managerTabs" id="showManageEmployees">Employees</li>
+        <li class="managerTabs" id="showManageTasks">Tasks</li>
+        <li class="managerTabs" id="showBacklog">Log</li>
+      </ul>
+      <p id="fillAllFieldsAlert">Please fill out all fields</p>
+      <p id="alreadyInUseAlert">Name or number already in use</p>
+
+    </section>
+
+  </div>
+
+
+<!-- MANAGE EMPLOYEES PAGE**************************** -->
+  <div id="manEmpPage">
+    <main id="editEmployeeMain">
+      <section id="addEmployeeHeader">
+        <h2 id="manageEmployeeH2">Add Employee</h2>
+      </section>
+      <section id="editEmployeeSection">
+        <p>Name:</p>
+        <input id="newName" type="text"><br>
+        <p>ID #:</p>
+        <input id="newEmployeeNumber" type="number">
+       <p>Manager?</p>
+       <select id="managerAccess">
+          <option value="yes">Yes</option>
+           <option value="no">No</option>
+       </select>
+        <button class="editEmployeeButt" id="newEmpButt">Submit</button>
+       <h2 id="editAllHeader">Edit All</h2>
+        <div class = "addEmployeeAnchor">
+        </div>
+
+
+      </section>
+    </main>
+  </div>
+
+<!-- MANAGE TASKS PAGE******************************** -->
+<div id="manDutiesContainer">
+  <div id="manDutiesPage">
+   <h2>Input New Task</h2>
+   <p>Task Area:</p>
+   <input id="location" type="text">
+   <p>Task:</p>
+   <textarea id="taskItem" type="text"></textarea>
+   <button id="addNewTask">Submit</button>
+ <br>
+   <section class="editTaskAnchor">
+   </section>
+  </div>
+</div>
+
+<!-- BACKLOG PAGE**************************** -->
+  <div id="backLogPage">
+    <section class = "backlogAnchor">
+    </section>
+
+  </div>
+
+  <!-- TO DO PAGE***************************** -->
+    <div id="todoPage">
+      <header>
+        <img class="treePic" src="img/tree.png" />
+        <p class="loggedIn"></p>
+        <h1 class="locate">TO DO</h1>
+        <div class="navToTaskLists navButtonContainerL">
+          <img class="navButton" src="img/navContainL.png" />
+          <p class="navButtonTextL">Task Lists</p>
+        </div>
+        <div class="navToComplete navButtonContainerR">
+          <img class="navButton" src="img/navContainR.png" />
+          <p class="navButtonTextR">Complete</p>
+        </div>
+      </header>
+
+      <section class="dutyList"></section>
+    </div>
+
+
+<!-- COMPLETE PAGE********************* -->
+ <div id="completePage">
+    <header>
+      <img class="treePic" src="img/tree.png" />
+      <p class="loggedIn"></p>
+      <h1 class="completePageTitle">COMPLETE</h1>
+      <div id="navToTodo" class="navButtonContainerL">
+        <img class="navButton" src="img/navContainL.png" />
+        <p class="navButtonTextL">To Do List</p>
+      </div>
+      <div id="navToReview" class="navButtonContainerR">
+        <img class="navButton" src="img/navContainR.png" />
+        <p class="navButtonTextR">Review</p>
+      </div>
+    </header>
+
+    <section class="completeList"></section>
+  </div>
+
+  <!-- REVIEW PAGE ********************* -->
+   <div id="reviewPage">
+      <header>
+        <img class="treePic" src="img/tree.png" />
+        <p class="loggedIn"></p>
+        <h1 class="reviewPageTitle">REVIEW</h1>
+        <div class="navToComplete navButtonContainerL">
+          <img class="navButton" src="img/navContainL.png" />
+          <p class="navButtonTextL">Complete</p>
+        </div>
+        <div id="printContain">
+          <div class="finalButton" id="saveButton"><p>SAVE</p></div>
+          <div class="finalButton" id="printButton"><p>PRINT</p></div>
+          <img id="printIcon" src="img/printIcon.png" />
+        </div>
+      </header>
+      <section class="reviewListIncomplete">
+        <p id="noCompleteItemsAlert">Please complete a task</p>
+
+        <p>Incomplete Tasks</p>
+        <ul>
+
+        </ul>
+        <h6>Comments:</h6>
+        <textarea id="commentInput"></textarea>
+      </section>
+
+      <section class="reviewListComplete">
+        <p>Complete Tasks</p>
+        <ul>
+
+        </ul>
+      </section>
+    </div>
+
+    <!-- ======================================   ANIMATION INTRO  ===================== -->
+
+    <div id="animationPage">
+      <div class="animate-container">
+        <div class="animationBlocker"></div>
+        <ul class="animate"><li class="animate"></li><li class="animate-thisOne animate"></li><li class="animate"></li><li class="animate"></li><li class="animate"></li></ul>
+        <h1 class="animate">TASK TRAPPER</h1>
+        <img class="animate" src="img/hand.png">
+      </div>
+    </div>
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="https://cdn.firebase.com/js/client/2.3.2/firebase.js"></script>
+  <script src="//cdn.jsdelivr.net/velocity/1.2.3/velocity.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.4/handlebars.min.js" charset="utf-8"></script>
+  <script src="JS/animate.js"></script>
+  <script src ="JS/emparray.js"></script>
+  <script src="JS/taskController.js"></script>
+  <script src="JS/index.js"></script>
+  <script src="JS/app.js"></script>
+  <script src="JS/boss_page.js"></script>
+  <script type="text/javascript" src="JS/addemployee.js"></script>
+  <script src="JS/backlogArray.js"></script>
+  <script src="JS/tasksArray.js"></script>
+
+</body>
+</html>

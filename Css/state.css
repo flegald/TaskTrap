@@ -1,0 +1,49 @@
+/*DUTY ITEM SELECTING STYLES*/
+
+.selectionTodo, .selectionComplete {
+  position: relative;
+  background-color: #0c6a96;
+  padding: 10px 60px 10px 2%;
+}
+.selectionTodo p, .selectionComplete p {
+  padding: 10px 60px 10px 14%;
+  color: #efefef;
+  text-shadow: 2px 4px 16px #565656;
+}
+
+
+/*adding arrows with css*/
+.selectionTodo::after, .selectionTodo::before {
+  position: absolute;
+  top: 35%;
+  content: '';
+  width: 0;
+  height: 0;
+  border-top: 20px solid transparent;
+  border-left: 25px solid #78BFE1;
+  border-bottom: 20px solid transparent;
+}
+.selectionTodo::after {
+  left: 6%;
+}
+.selectionTodo::before {
+  right: 50px;
+}
+
+.selectionComplete::after, .selectionComplete::before {
+  position: absolute;
+  top: 35%;
+  content: '';
+  width: 0;
+  height: 0;
+  border-top: 20px solid transparent;
+  border-right: 25px solid #78BFE1;
+  border-bottom: 20px solid transparent;
+}
+
+.selectionComplete::before {
+  left: 6%;
+}
+.selectionComplete::after {
+  right: 60px;
+}

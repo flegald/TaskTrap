@@ -1,0 +1,510 @@
+
+/*==================================HEADER AND NAVIGATION==================*/
+
+header {
+  min-width: 320px;
+  z-index: 1;
+  position: fixed;
+  top: -10px;
+  left: -10px;
+  font-family: 'Muli', sans-serif;
+  width: 103%;
+  height: 130px;
+  background: -webkit-linear-gradient(78deg, #0c6d99, #0c6d99);
+  color: #efefef;
+  box-shadow: 0 0 27px #565656;
+}
+header h1 {
+  padding-top: 15px;
+  margin: 10 auto;
+  font-size: 2em;
+  font-weight: 100;
+  text-align: center;
+  text-shadow: 2px 4px 16px #565656;
+}
+
+.navButtonContainerL {
+  position: absolute;
+  top: 83px;
+  left: 15px;
+  cursor: pointer;
+}
+.navButtonContainerR {
+  position: absolute;
+  top: 83px;
+  right: 2%;
+  cursor: pointer;
+}
+.navButton {
+  width: 120px;
+  height: 30px;
+  box-shadow: 3px 10px 18px -12px #565656;
+}
+.navButtonTextL, .navButtonTextR {
+  position: absolute;
+  top: -18px;
+  left: 16px;
+  white-space: nowrap;
+  color: #0c6b98;
+  font-size: 1.3em;
+  font-weight: bold;
+}
+.navButtonTextR {
+  left: 12px;
+}
+
+/*=====================================PAGE SPECIFIC HEADER MODULES==========*/
+
+
+#printContain {
+  width: 25%;
+  height: 130px;
+  position: absolute;
+  top: 0;
+  right: 0px;
+  background-color: rgba(10,52,105,0.35);
+}
+
+.finalButton {
+  display: block;
+  margin: -10px 0 -15px 0;
+  padding: 0;
+  width: 100%;
+  height: 47%;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 1.4em;
+}
+
+#saveButton {
+  border-bottom: 1px solid #639DB9;
+  line-height: 63px;
+  cursor: pointer;
+}
+
+#printButton {
+  line-height: 42px;
+  cursor: pointer;
+}
+
+#printIcon {
+  position: absolute;
+  width: 75px;
+  display: none;
+  margin: 65px auto;
+}
+
+.loggedIn {
+  position: absolute;
+  top: 0;
+  left: 30px;
+  text-shadow: 2px 4px 16px #565656;
+}
+
+.treePic {
+  width: 600px;
+  position: absolute;
+  top: -193px;
+  left: 170px;
+  z-index: -5;
+  clip: rect(0px, 800px, 322px, 0px);
+  -webkit-filter: hue-rotate(65deg) opacity(0.2);
+}
+
+/*=============================================   SIGN IN PAGE   ==============================*/
+
+#empForm {
+  width: 150px;
+  height: 40px;
+  font-size: 2em;
+  margin: 30px 0 0 0 ;
+}
+
+/*=====================================  TASK LISTS  ===============*/
+
+#taskList {
+  display: flex;
+  flex-direction: column;
+  width: 320px;
+  margin: 0 auto;
+}
+
+#taskList h2 {
+  padding: 0;
+}
+
+.taskChoice {
+  text-align: left;
+}
+
+/*=====================================  TO DO / COMPLETED TASK LISTS  ===============*/
+
+.dutyList,
+#completePage,
+#reviewPage {
+  margin-top: 200px;
+}
+.dutyItem, .completeItem {
+  background-color: #78bfe1;
+  padding: 10px 0 10px 0;
+  width: 100%;
+  position: relative;
+  border-bottom: 1px solid #639DB9;
+}
+.dutyItem p , .completeItem p {
+  text-align: left;
+  font-weight: bold;
+  padding: 0 10px;
+  margin: 8px 0;
+}
+
+/*=====================================  REVIEW PAGE TASK LISTS  ===============*/
+
+.reviewListIncomplete {
+  background: #78bfe1;
+  color: black;
+  margin-bottom: 30px;
+}
+
+.reviewListComplete {
+  background: #78bfe1;
+  color: black;
+  margin-top: 10px;
+}
+
+.reviewListIncomplete p,
+.reviewListComplete p {
+  font-size: 1em;
+  font-weight: bold;
+  margin-top: 20px;
+  margin-bottom: 50px;
+  padding-top: 30px;
+}
+
+.reviewListIncomplete li,
+.reviewListComplete li {
+  border-bottom: 1px solid #639DB9;
+  font-size: .8em;
+  background: #78bfe1;
+  padding: 2px;
+}
+
+/*=============================  MANAGERS OPTIONS ===================*/
+
+#managerListSection {
+  text-align: center;
+  width: 100%;
+}
+
+#managerTabList{
+  position: fixed;
+  top: 105px;
+  width: 100%;
+  height: 30px;
+  padding: 0;
+  margin: 10px auto;
+}
+.managerTabs{
+  color: #0c6b98;
+  display: inline-block;
+  cursor: pointer;
+  text-align: center;
+  background-color: white;
+  width: 32%;
+  margin-top: 5px;
+  padding: 5px 0;
+  cursor: pointer;
+}
+
+/*=============================EDIT EMPLOYEE PAGE===============*/
+
+#manageEmployeeH2 {
+  width: 100%;
+  margin: -110px 0 20px 0;
+  padding: 0;
+  text-align: center;
+}
+
+#editAllHeader {
+  width: 100%;
+  margin: 60px 0 10px 0;
+  padding: 0;
+  text-align: center;
+}
+
+#editEmployeeMain{
+  margin-top: -10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  }
+
+/*#editEmployeeMain h2 {
+  margin: 40px 0 -20px 0;
+  }*/
+
+#editEmployeeSection {
+  color: #efefef;
+  /*border: solid green;*/
+  width: 310px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin: -80px 0 0 0;
+}
+
+#editEmployeeSection p {
+  font-size: 1em;
+  margin: 5px 1px 1px 15px;
+  width: 80px;
+  text-align: left;
+}
+
+#editEmployeeSection input {
+  margin: 2px 20px 2px 0;
+}
+
+#editEmployeeSection span {
+  display: none;
+}
+
+#managerAccess,
+.newManagerAccess {
+  margin: 8px 100px 2px 2px;
+}
+
+.editEmployeeButt {
+  width: 100%;
+  height: 30px;
+  background-color: #0c6b98;
+  margin: 5px 0 0 0;
+  border: none;
+  font-size: 1.2em;
+  color: #fff;
+  font-family: 'Muli', sans-serif;
+  font-weight: 300;
+}
+
+.addEmployeeAnchor {
+  margin: -10px 0 0 0;
+  width: 320px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  text-align: left;
+}
+
+.editEmployeeForm {
+  width: 100%;
+}
+
+.editEmployeeForm p {
+  margin: 5px 1px 1px 0;
+}
+
+.editEmployeeTemplate {
+  /*border: solid red;*/
+  width: 320px;
+  height: 175px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin: -10px 0 0 0;
+  text-align: left;
+}
+
+.editEmployeeTemplate p {
+  display: inline-block;
+  font-size: 1.3em;
+  margin: 5px 1px 1px 5px;
+  width: 80px;
+  text-align: left;
+}
+
+.finishEdit , .finishDelete {
+  width: 100%;
+  height: 30px;
+  background-color: #0c6b98;
+  margin: 5px 0 0 15px;
+  border: none;
+  font-size: 1.2em;
+  color: #fff;
+  font-family: 'Muli', sans-serif;
+  font-weight: 300;
+}
+
+/*=================  MANAGER HUB - TASKS ===================*/
+
+#manDutiesContainer {
+  width: 100%;
+  margin: -80px 0 0 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  /*border: solid yellow;*/
+  color: #efefef;
+}
+
+#manDutiesPage {
+  align-self: center;
+  width: 320px;
+  color: #efefef;
+  margin: 100px;
+  padding: 0;
+  /*border: solid green;*/
+  text-align: center;
+}
+
+.editTaskAnchor {
+  width: 320px;
+  /*border: solid red;*/
+  margin: 20px 0 5px 0;
+  overflow: hidden;
+}
+
+.editTaskTemplate {
+  width: 100%;
+  /*border: solid blue;*/
+  margin: 10px 0 20px 0;
+}
+
+.templateTaskItems {
+  color: #000;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+#manDutiesPage h2 {
+  color: #efefef;
+  padding-top: 50px;
+  font-size: 1.3em;
+  font-weight: 300;
+  text-shadow: 2px 4px 16px #565656;
+  margin: 0 0 15px 0;
+  padding: 0;
+}
+
+#manDutiesPage p {
+  margin: 0;
+  padding: 0;
+}
+
+#manDutiesPage input {
+  color: #000;
+  font-size: 1em;
+  width: 320px;
+  margin: 0;
+  padding: 0;
+}
+
+#manDutiesPage ul {
+  margin: 0;
+  padding: 0;
+}
+
+#manDutiesPage li {
+  padding: 0;
+}
+
+#taskItem {
+  height: 100px;
+  color: #000;
+  font-size: 1em;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+#addNewTask {
+  color: #efefef;
+  background-color: #0c6b98;
+  width: 100%;
+  height: 30px;
+  margin: 0;
+  padding: 0;
+}
+
+.editTaskButton {
+  color: #efefef;
+  background-color: #0c6b98;
+  width: 49%;
+  height: 30px;
+  margin: .5px;
+  padding: 0;
+}
+
+#a1TaskEdit {
+  text-align: center;
+}
+
+.deleteThisTaskButton {
+  width: 60px;
+  height: 27px;
+  font-size: 0.8em;
+}
+
+/*=================  MANAGER HUB - LOG ===================*/
+
+#backLogPage {
+  color: #efefef;
+  padding: 15px;
+  margin-top: 240px;
+}
+
+#backLogPage section {
+  margin-top: 30px;
+}
+
+.backlogTemplate {
+  border: 1px solid #efefef;
+  padding: 5px;
+}
+.backlogTemplate p {
+  /*font-family: Arial;*/
+  margin: -5px;
+  text-align: left;
+  padding: 7px 12px 12px 12px;
+  text-shadow: 1px 1px 18px #000;
+}
+.backlogTemplate > p:first-child {
+  text-align: right;
+}
+
+#backLogPage ul {
+  margin: 0;
+}
+
+#backLogPage li {
+  padding: 5px;
+}
+
+#a1TaskEdit {
+  text-align: center;
+}
+
+/*=================  ALERTS FOR ALL PAGES ===================*/
+
+#signInAlert,
+#wrongIdAlert,
+#selectTaskListAlert,
+#noCompleteItemsAlert,
+#fillAllFieldsAlert,
+#alreadyInUseAlert {
+  z-index: 10;
+  padding-top: 10px;
+  margin-bottom: 0;
+  display: none;
+  font-weight: bold;
+  font-size: 1.2em;
+  color: red;
+  text-align: center;
+}
