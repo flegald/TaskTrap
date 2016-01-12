@@ -24,7 +24,7 @@ fbData.child('Task').on('value', function(snapshot){
 	function applyTaskTemplate(){
 		$.get('Templates/editTaskTemplate.html', function(data){
 			$('.editTaskAnchor').empty();
-			for (i = 0; i < allTaskArray.length; i ++){
+			for (i = 1; i < allTaskArray.length; i ++){
 		 	   var compTemp = Handlebars.compile(data);
 	       var handPush = compTemp(allTaskArray[i]);
 	       $('.editTaskAnchor').append(handPush);
@@ -83,20 +83,32 @@ fbData.child('Task').on('value', function(snapshot){
 		allTaskArray.forEach(function(task) {
 			if (task.group == thisGroup) {
 				var index = -1;
-				console.log('task.groupArray: ', task.groupArray);
+				var groupIndex = -1;
+				// console.log('task.groupArray: ', task.groupArray);
 				for (i = 0; i < task.groupArray.length; i++) {
-						console.log('task.groupArray[i]:', task.groupArray[i]);
-						console.log('thisLi: ' , thisLi);
+						// console.log('task.groupArray[i]:', task.groupArray[i]);
+						// console.log('thisLi: ' , thisLi);
 					if (task.groupArray[i] == thisLi) {
 						index = i;
 						task.groupArray.splice(index, 1);
+						for (a = 0; a < allTaskArray.length; a ++){
+							if ( allTaskArray[a].groupArray.length === 0){
+								console.log(allTaskArray[a]);
+								groupIndex = a;
+								allTaskArray.splice(groupIndex, 1);
+							}
+						}
 						break;
 					}
 				}
 				console.log('index', index);
+				console.log('groupIndex', groupIndex);
 				// allTaskArray.splice(index, 1);
 				fbData.child('Task').set(allTaskArray);
 			}
 		});
 
 	});
+
+
+	
