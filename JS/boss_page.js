@@ -7,8 +7,11 @@ $(function(){
 	});
 
 	$('#showManageTasks').on('click', function(){
+		// console.log('task click');
+		// console.log(allTaskArray);
+		// console.log($('#manDutiesPage').text())
+		$('#manDutiesPage').show();
 		$('#manDutiesContainer').show();
-		$('#hiddenGroup').hide();
 		$('#manEmpPage').hide();
 		$('#backLogPage').hide();
 	});

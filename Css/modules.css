@@ -351,6 +351,7 @@ header h1 {
   text-align: center;
   /*border: solid yellow;*/
   color: #efefef;
+  z-index: 100;
 }
 
 #manDutiesPage {

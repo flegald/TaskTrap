@@ -41,13 +41,6 @@ fbData.child('Task').on('value', function(snapshot){
 				var handPush = compTemp(task);
 				$('.taskChoice').append(handPush);
 			});
-
-			// for (i = 0; i < allTaskArray.length; i ++){
-			// 	var compTemp = Handlebars.compile(data);
-   //     	var handPush = compTemp(allTaskArray[i]);
-   //     	$('.taskChoice').append(handPush);
-			// }
-
 		});
 	}
 
