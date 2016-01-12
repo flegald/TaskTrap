@@ -35,12 +35,11 @@ fbData.child('Task').on('value', function(snapshot){
 	function applyCheckboxTemplate(){
 		$.get('Templates/checkBoxTemplate.html', function(data){
 			$('.taskChoice').empty();
-
-			allTaskArray.forEach(function(task) {
+			for (i =1 ; i < allTaskArray.length; i ++){
 				var compTemp = Handlebars.compile(data);
-				var handPush = compTemp(task);
+				var handPush = compTemp(allTaskArray[i]);
 				$('.taskChoice').append(handPush);
-			});
+			}
 		});
 	}
 
