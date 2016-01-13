@@ -7,8 +7,8 @@ $(function(){
 	});
 
 	$('#showManageTasks').on('click', function(){
+		$('#manDutiesPage').show();
 		$('#manDutiesContainer').show();
-		$('#hiddenGroup').hide();
 		$('#manEmpPage').hide();
 		$('#backLogPage').hide();
 	});
