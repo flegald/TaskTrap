@@ -37,7 +37,6 @@ header h1 {
 }
 .navButton {
   width: 20px;
-  box-shadow: 3px 10px 18px -12px #565656;
 }
 .navButtonTextL, .navButtonTextR {
   position: absolute;
@@ -143,14 +142,14 @@ header h1 {
 .dutyList,
 #completePage,
 #reviewPage {
-  margin-top: 200px;
+  margin-top: 64px;
 }
 .dutyItem, .completeItem {
-  background-color: #78bfe1;
+  background-color: #fff;
   padding: 10px 0 10px 0;
   width: 100%;
   position: relative;
-  border-bottom: 1px solid #639DB9;
+  border-bottom: 1px solid #981920;
 }
 .dutyItem p , .completeItem p {
   text-align: left;
@@ -162,13 +161,11 @@ header h1 {
 /*=====================================  REVIEW PAGE TASK LISTS  ===============*/
 
 .reviewListIncomplete {
-  background: #78bfe1;
   color: black;
   margin-bottom: 30px;
 }
 
 .reviewListComplete {
-  background: #78bfe1;
   color: black;
   margin-top: 10px;
 }
@@ -184,9 +181,7 @@ header h1 {
 
 .reviewListIncomplete li,
 .reviewListComplete li {
-  border-bottom: 1px solid #639DB9;
   font-size: .8em;
-  background: #78bfe1;
   padding: 2px;
 }
 
@@ -368,7 +363,7 @@ input.finishEdit, input.finishDelete {
 #manDutiesPage {
   align-self: center;
   width: 320px;
-  color: #efefef;
+  color: #848484;
   margin: 100px;
   padding: 0;
   /*border: solid green;*/
@@ -383,9 +378,9 @@ input.finishEdit, input.finishDelete {
 }
 
 .editTaskTemplate {
-  width: 100%;
+  width: 80%;
   /*border: solid blue;*/
-  margin: 10px 0 20px 0;
+  margin: 20px auto;
 }
 
 .templateTaskItems {
@@ -396,11 +391,9 @@ input.finishEdit, input.finishDelete {
 }
 
 #manDutiesPage h2 {
-  color: #efefef;
   padding-top: 50px;
   font-size: 1.3em;
   font-weight: 300;
-  text-shadow: 2px 4px 16px #565656;
   margin: 0 0 15px 0;
   padding: 0;
 }
@@ -410,36 +403,38 @@ input.finishEdit, input.finishDelete {
   padding: 0;
 }
 
-#manDutiesPage input {
+#manDutiesPage input[type="text"] {
   color: #000;
   font-size: 1em;
-  width: 320px;
+  width: 80%;
   margin: 0;
   padding: 0;
 }
 
 #manDutiesPage ul {
-  margin: 0;
+  margin-bottom: 5px;
   padding: 0;
 }
 
 #manDutiesPage li {
   padding: 0;
+  margin-bottom: 10px;
 }
 
 #taskItem {
   height: 100px;
   color: #000;
   font-size: 1em;
-  width: 100%;
+  width: 80%;
   margin: 0;
   padding: 0;
 }
 
 #addNewTask {
   color: #efefef;
-  background-color: #0c6b98;
-  width: 100%;
+  background: -webkit-linear-gradient(453deg, #981920, #EA6802);
+  /*background-color: #0c6b98;*/
+  width: 80%;
   height: 30px;
   margin: 0;
   padding: 0;
@@ -459,21 +454,29 @@ input.finishEdit, input.finishDelete {
 }
 
 .deleteThisTaskButton {
-  width: 60px;
-  height: 27px;
+  text-align: center;
+  float: left;
+  border: 1px solid #981920;
+  width: 20px;
+  height: 20px;
   font-size: 0.8em;
+  font-weight: 900;
+  color: #981920;
+  background: #fff;
+  padding: 0;
+  margin: 0 4px 0 5px;
 }
 
 /*=================  MANAGER HUB - LOG ===================*/
 
 #backLogPage {
-  color: #efefef;
+  color: #848484;
   padding: 15px;
-  margin-top: 240px;
+  margin-top: 30px;
 }
 
 #backLogPage section {
-  margin-top: 30px;
+  margin-top: 0;
 }
 
 .backlogTemplate {
@@ -485,7 +488,6 @@ input.finishEdit, input.finishDelete {
   margin: -5px;
   text-align: left;
   padding: 7px 12px 12px 12px;
-  text-shadow: 1px 1px 18px #000;
 }
 .backlogTemplate > p:first-child {
   text-align: right;

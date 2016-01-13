@@ -2,13 +2,12 @@
 
 .selectionTodo, .selectionComplete {
   position: relative;
-  background-color: #0c6a96;
+  background-color: #FFD66B;
   padding: 10px 60px 10px 2%;
 }
 .selectionTodo p, .selectionComplete p {
   padding: 10px 60px 10px 14%;
-  color: #efefef;
-  text-shadow: 2px 4px 16px #565656;
+  color: #000;
 }
 
 
@@ -20,7 +19,7 @@
   width: 0;
   height: 0;
   border-top: 20px solid transparent;
-  border-left: 25px solid #78BFE1;
+  border-left: 25px solid #E05929;
   border-bottom: 20px solid transparent;
 }
 .selectionTodo::after {
@@ -37,7 +36,7 @@
   width: 0;
   height: 0;
   border-top: 20px solid transparent;
-  border-right: 25px solid #78BFE1;
+  border-right: 25px solid #E05929;
   border-bottom: 20px solid transparent;
 }
 

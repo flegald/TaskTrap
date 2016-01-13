@@ -17,11 +17,11 @@ $(function(){
 		$('#manDutiesContainer').hide();
 		$('#manEmpPage').hide();
 		$('#backLogPage').show();
-	})
+	});
 
 	$('#exitManager').on('click', function(){
 		$('#manEmpPage').hide();
 		$('#manDutiesContainer').hide();
 		$('#backLogPage').hide();
-	})
+	});
 });

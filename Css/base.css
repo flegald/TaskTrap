@@ -8,7 +8,7 @@ html {
 
 }
 body {
-  overflow-x: hidden;
+  /*overflow-x: hidden;*/
   font-family: 'Muli', sans-serif;
   /*background: -webkit-linear-gradient(-90deg, #50afda, #0c82b9);*/
   /*background-color: #2197ce;*/
@@ -55,8 +55,7 @@ input[type="checkbox"] {
 }
 label {
   font-size: 2em;
-  color: #efefef;
-  text-shadow: 2px 4px 16px #565656;
+  color: #848484;
 }
 button {
   width: 150px;
