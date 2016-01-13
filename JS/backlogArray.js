@@ -10,7 +10,7 @@ function applyBacklogTemplate(){
 		for (i = 0; i < backlogArray.length; i ++){
 	 		var compTemp = Handlebars.compile(data);
       var handPush = compTemp(backlogArray[i]);
-      $('.backlogAnchor').append(handPush);
+      $('.backlogAnchor').prepend(handPush);
     }
     $('.backlogTemplate').find('p').hide();
     fbData.child('Backlog').set(backlogArray);
