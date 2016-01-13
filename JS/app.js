@@ -57,6 +57,7 @@ main.savePrintListeners = function() {
 
   if($('.completeList').children().length > 0){
     fbData.child('Backlog').push(taskController.reviewPrint());
+    $('#commentInput').val('');
     $('.dutyList').empty();
     $('.completeList').empty();
     taskController.completeArray = [];

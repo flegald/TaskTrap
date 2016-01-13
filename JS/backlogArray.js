@@ -19,7 +19,6 @@ function applyBacklogTemplate(){
 
 fbData.child('Backlog').on('value', function(snapshot){
 	backlogArray = [];
-	console.log('backlog first ' + backlogArray);
 	$.each(snapshot.val(), function(index, value){
 		backlogArray.push(value);
 	});
@@ -28,6 +27,5 @@ fbData.child('Backlog').on('value', function(snapshot){
 });
 
 $('.backlogAnchor').on('click', '.backlogTemplate', function() {
-  console.log('toggle');
   $(this).find('p').slideToggle();
 });

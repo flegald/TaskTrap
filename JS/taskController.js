@@ -118,13 +118,14 @@ taskController.setListeners = function() {
 
 //===========================================  REVIEW PAGE: ON PRINT  ==================
 
-  taskController.Backlog = function(date, time, employeeName, employeeNumber, incompleteArray, completeArray){
+  taskController.Backlog = function(date, time, employeeName, employeeNumber, incompleteArray, completeArray, comment){
     this.backlogDate = date;
     this.backlogTime = time;
     this.backlogName = employeeName;
     this.backlogNumber = employeeNumber;
     this.incompleteArray = incompleteArray;
     this.completeArray = completeArray;
+    this.comment = comment;
   };
 
   taskController.reviewPrint = function(){
@@ -134,9 +135,10 @@ taskController.setListeners = function() {
       localStorage.getItem('login'),
       localStorage.getItem('number'),
       taskController.incompleteArray,
-      taskController.completeArray
+      taskController.completeArray,
+      $('#commentInput').val()
     );
-    return currentBacklog;;
+    return currentBacklog;
   };
 
   taskController.getIncompleteArray = function(){

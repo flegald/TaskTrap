@@ -2,7 +2,7 @@ Employee = function(name, employeeNumber, managerAccess){
 		this.employeeName = name;
 		this.employeeNumber = employeeNumber;
 		this.managerAccess = managerAccess;
-	}
+	};
 
 $(function(){
 
