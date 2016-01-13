@@ -7,7 +7,7 @@ function applyTemplate(){
 	$.get('Templates/editEmployeeTemplate.html', function(data){
 
 		$('.addEmployeeAnchor').empty();
-		for (i = 0; i < employeeData.length; i ++){
+		for (i = 1; i < employeeData.length; i ++){
 	 	   var compTemp = Handlebars.compile(data);
        var handPush = compTemp(employeeData[i]);
        $('.addEmployeeAnchor').append(handPush);
@@ -32,23 +32,23 @@ function applyTemplate(){
 
      $('.finishDelete').on('click', function(e) {
         e.preventDefault();
-        var editName = $(this).siblings('.editName').val();
-        employeeData.forEach(function(employee){
-          if (employee.employeeName == editName){
-            var searchTerm = editName;
+        var editNum = $(this).siblings('.newEmployeeNumber').val();
+        for (i = 0; i < employeeData.length; i ++){
+            if (employeeData[i].employeeNumber == editNum){
+            var searchTerm = editNum;
             var index = -1;
-            for(i = 0; i < employeeData.length; i ++){
-              if (employeeData[i].employeeName == searchTerm){
+            for(a = 0; a < employeeData.length; a ++){
+              if (employeeData[a].employeeNumber == searchTerm){
                 index = i;
+                employeeData.splice(index, 1);
                 break;
               }
             }
             console.log('index: ', index);
-            employeeData.splice(index, 1);
             console.log(employeeData);
             fbData.child('Employees').set(employeeData);
           }
-        });
+        }
       });
   });
 }
