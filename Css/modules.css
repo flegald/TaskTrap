@@ -9,48 +9,47 @@ header {
   left: -10px;
   font-family: 'Muli', sans-serif;
   width: 103%;
-  height: 130px;
-  background: -webkit-linear-gradient(78deg, #0c6d99, #0c6d99);
+  height: 75px;
+  background: -webkit-linear-gradient(99deg, #981920, #EA6802);
   color: #efefef;
   box-shadow: 0 0 27px #565656;
 }
 header h1 {
   padding-top: 15px;
   margin: 10 auto;
-  font-size: 2em;
-  font-weight: 100;
+  font-size: 1em;
+  font-weight: 500;
   text-align: center;
   text-shadow: 2px 4px 16px #565656;
 }
 
 .navButtonContainerL {
   position: absolute;
-  top: 83px;
+  top: 28px;
   left: 15px;
   cursor: pointer;
 }
 .navButtonContainerR {
   position: absolute;
-  top: 83px;
+  top: 28px;
   right: 2%;
   cursor: pointer;
 }
 .navButton {
-  width: 120px;
-  height: 30px;
+  width: 20px;
   box-shadow: 3px 10px 18px -12px #565656;
 }
 .navButtonTextL, .navButtonTextR {
   position: absolute;
-  top: -18px;
-  left: 16px;
+  top: -6px;
+  left: 18px;
   white-space: nowrap;
-  color: #0c6b98;
-  font-size: 1.3em;
+  color: #fff;
+  font-size: 0.9em;
   font-weight: bold;
 }
 .navButtonTextR {
-  left: 12px;
+  left: -63px;
 }
 
 /*=====================================PAGE SPECIFIC HEADER MODULES==========*/
@@ -99,11 +98,13 @@ header h1 {
   top: 0;
   left: 30px;
   text-shadow: 2px 4px 16px #565656;
+  display: none;
 }
 
 .treePic {
   width: 600px;
   position: absolute;
+  display: none;
   top: -193px;
   left: 170px;
   z-index: -5;
@@ -197,43 +198,43 @@ header h1 {
 }
 
 #managerTabList{
-  position: fixed;
-  top: 105px;
   width: 100%;
-  height: 30px;
   padding: 0;
-  margin: 10px auto;
+  margin: -40px auto;
 }
 .managerTabs{
-  color: #0c6b98;
+  color: #981920;
   display: inline-block;
   cursor: pointer;
   text-align: center;
-  background-color: white;
-  width: 32%;
+  background-color: #fff;
+  width: 30%;
   margin-top: 5px;
-  padding: 5px 0;
-  cursor: pointer;
+  padding: 8px 0;
+  border-bottom: 1px solid #981920;
+  border-left: 1px solid #981920;
+  border-right: 1px solid #981920;
+  font-size: 1em;
 }
 
 /*=============================EDIT EMPLOYEE PAGE===============*/
 
 #manageEmployeeH2 {
   width: 100%;
-  margin: -110px 0 20px 0;
+  margin: -50px 0 20px 0;
   padding: 0;
   text-align: center;
 }
 
 #editAllHeader {
   width: 100%;
-  margin: 60px 0 10px 0;
+  margin: 30px 0 -60px 0;
   padding: 0;
   text-align: center;
 }
 
 #editEmployeeMain{
-  margin-top: -10px;
+  margin-top: 0px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -244,7 +245,7 @@ header h1 {
   }*/
 
 #editEmployeeSection {
-  color: #efefef;
+  color: #848484;
   /*border: solid green;*/
   width: 310px;
   display: flex;
@@ -252,7 +253,7 @@ header h1 {
   flex-wrap: wrap;
   justify-content: flex-start;
   align-items: flex-start;
-  margin: -80px 0 0 0;
+  margin: -20px 0 0 0;
 }
 
 #editEmployeeSection p {
@@ -262,8 +263,16 @@ header h1 {
   text-align: left;
 }
 
+input.finishEdit, input.finishDelete {
+  width: 54%                              !important;
+  margin: 5px auto                        !important;
+  display: block                          !important;
+  background: -webkit-linear-gradient(453deg, #981920, #EA6802);
+}
+
 #editEmployeeSection input {
   margin: 2px 20px 2px 0;
+  width: 185px;
 }
 
 #editEmployeeSection span {
@@ -276,10 +285,10 @@ header h1 {
 }
 
 .editEmployeeButt {
-  width: 100%;
+  width: 56%;
   height: 30px;
-  background-color: #0c6b98;
-  margin: 5px 0 0 0;
+  background: -webkit-linear-gradient(453deg, #981920, #EA6802);
+  margin: 5px auto;
   border: none;
   font-size: 1.2em;
   color: #fff;
@@ -315,7 +324,7 @@ header h1 {
   flex-wrap: wrap;
   justify-content: flex-start;
   align-items: flex-start;
-  margin: -10px 0 0 0;
+  margin: 40px 0 0 0;
   text-align: left;
 }
 
@@ -338,6 +347,8 @@ header h1 {
   font-family: 'Muli', sans-serif;
   font-weight: 300;
 }
+
+
 
 /*=================  MANAGER HUB - TASKS ===================*/
 
