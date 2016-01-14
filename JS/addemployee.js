@@ -34,7 +34,7 @@ $(function(){
 			// alert("name or number already in use");
 			$('#alreadyInUseAlert').show();
 		}
-	})
+	});
 
 	$("input[type=text]").on('focus',function(){
 		$('#alreadyInUseAlert').hide();

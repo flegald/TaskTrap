@@ -16,14 +16,17 @@ function applyTemplate(){
 		$('.finishEdit').on('click', function(){
 			var newName = $(this).siblings('.editName').val();
 			var newNum = $(this).siblings('.newEmployeeNumber').val();
+      var newAccess = $(this).siblings('.newManagerAccess').val();
       employeeData.forEach(function(employee){
       	if (employee.employeeName == newName){
       		employee.employeeNumber = newNum;
       		employee.employeeName = newName;
+          employee.managerAccess = newAccess;
       		console.log(employee);
       	} else if (employee.employeeNumber == newNum){
       		employee.employeeNumber = newNum;
       		employee.employeeName = newName;
+          employee.managerAccess = newAccess;
       		console.log(employee);
       	}
       });
