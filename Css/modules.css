@@ -258,6 +258,17 @@ header h1 {
   text-align: left;
 }
 
+.currentAccessContainer {
+  width: 120px !important;
+}
+
+.currentAccessDisplay {
+  width: 150px !important;
+  display: inline !important;
+  text-transform: uppercase;
+  color: #981920;
+}
+
 input.finishEdit, input.finishDelete {
   width: 54%                              !important;
   margin: 5px auto                        !important;
