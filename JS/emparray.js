@@ -7,6 +7,7 @@ function applyTemplate(){
 	$.get('Templates/editEmployeeTemplate.html', function(data){
 
 		$('.addEmployeeAnchor').empty();
+    eraseSpace();
 		for (i = 1; i < employeeData.length; i ++){
 	 	   var compTemp = Handlebars.compile(data);
        var handPush = compTemp(employeeData[i]);
@@ -61,17 +62,21 @@ function applyTemplate(){
    	employeeData = [];
 			$.each(snapshot.val(), function(index, value){
 			employeeData.push(value);
+
 			});
 			applyTemplate();
 
     });
 
-	});
+   function eraseSpace() {
+    employeeData.forEach(function(employee){
+     var tempName = employee.employeeName
+     var newStr = tempName.replace(/\s+/g, '_');
+     employee.employeeName = newStr;
+    })
+   }
 
-
-
-
-
+});
 
 
 
