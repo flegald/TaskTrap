@@ -29,6 +29,8 @@ $(function(){
 			console.log('added to fb');
 			tempEmployee = new Employee(nameGrab, numGrab, access);
 			fbData.child('Employees').push(tempEmployee);
+			$('#newName').val('');
+			$('#newEmployeeNumber').val('');
     } else {
 			console.log('not added');
 			// alert("name or number already in use");

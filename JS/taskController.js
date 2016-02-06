@@ -168,5 +168,8 @@ taskController.setListeners = function() {
     var today = new Date();
     var hour = today.getHours();
     var minutes = today.getMinutes();
+    if (minutes < 10) {
+      minutes = '0' + minutes;
+    }
     return(hour + ':' + minutes);
   }
