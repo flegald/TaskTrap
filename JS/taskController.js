@@ -167,8 +167,7 @@ taskController.setListeners = function() {
   function getBacklogTime(){
     var today = new Date();
     var hour = today.getHours();
-    // var minutes = today.getMinutes();
-    var minutes = 9;
+    var minutes = today.getMinutes();
     if (minutes < 10) {
       minutes = '0' + minutes;
     }
