@@ -10,8 +10,7 @@ html {
 body {
   /*overflow-x: hidden;*/
   font-family: 'Muli', sans-serif;
-  /*background: -webkit-linear-gradient(-90deg, #50afda, #0c82b9);*/
-  /*background-color: #2197ce;*/
+  background-color: #9b2124;
   min-width: 320px;
   margin: 0 auto;
 }
@@ -23,10 +22,10 @@ section {
   text-align: center;
 }
 section h2 {
-  color: #848484;
+  color: #fdb80f;
   font-size: 1.3em;
   font-weight: 300;
-  /*text-shadow: 2px 4px 16px #565656;*/
+  /*text-shadow: 2px 4px 16px #565656;
 }
 li{
   text-align: left;
@@ -78,7 +77,7 @@ textarea {
 
 /*========================================MISC======================*/
 
-.ui-loader {
+body > div.ui-loader.ui-corner-all.ui-body-a.ui-loader-default > h1 {
   display: none;
 }
 

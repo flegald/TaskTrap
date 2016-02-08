@@ -212,6 +212,9 @@ hr {
   -moz-box-sizing: content-box;
   box-sizing: content-box;
   height: 0;
+  width: 95%;
+  margin: 20px 0 0 0;
+  border-color: #fdb80f;
 }
 
 /**
@@ -335,6 +338,7 @@ input[type="checkbox"],
 input[type="radio"] {
   box-sizing: border-box; /* 1 */
   padding: 0; /* 2 */
+  width: 50px;
 }
 
 /**
