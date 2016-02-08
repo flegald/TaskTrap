@@ -23,9 +23,22 @@ fbData.child('Backlog').on('value', function(snapshot){
 		backlogArray.push(value);
 	});
 	applyBacklogTemplate();
-
+	eraseOld();
 });
 
 $('.backlogAnchor').on('click', '.backlogTemplate', function() {
   $(this).find('p').slideToggle();
 });
+
+
+function eraseOld(){
+	var today = new Date();	
+	backlogArray.forEach(function(log){
+		var oldDate = log.backlogDate;
+		var convertDate = new Date(oldDate);
+		if (today - convertDate > 12096e5){
+			var indexNum = backlogArray.indexOf(log);
+			backlogArray.splice(indexNum);
+		}
+	})
+}
