@@ -131,6 +131,8 @@ header h1 {
   background-color: transparent;
   color: #fdb80f;
   font-size: 1.5em;
+  margin: 0 auto;
+  border-radius: 0;
 }
 
 /*=====================================  TASK LISTS  ===============*/
@@ -476,6 +478,7 @@ header h1 {
   width: 80%;
   margin: 0;
   padding: 0;
+  margin: 0 auto;
 }
 
 #addNewTask {
@@ -484,8 +487,8 @@ header h1 {
   border: 2px solid #fdb80f;
   width: 80%;
   height: 30px;
-  margin-top: 20px;
   padding: 0;
+  margin: 20px auto 0 auto;
 }
 
 .editTaskButton {
