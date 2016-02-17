@@ -15,9 +15,9 @@ function applyTemplate(){
     }
 
 		$('.finishEdit').on('click', function(){
-			var newName = $(this).siblings('.editName').val();
-			var newNum = $(this).siblings('.newEmployeeNumber').val();
-      var newAccess = $(this).siblings('.newManagerAccess').val();
+			var newName = $(this).parent().siblings('.editName').val();
+			var newNum = $(this).parent().siblings('.newEmployeeNumber').val();
+      var newAccess = $(this).parent().siblings('.newManagerAccess').val();
       employeeData.forEach(function(employee){
       	if (employee.employeeName == newName){
       		employee.employeeNumber = newNum;
@@ -36,7 +36,7 @@ function applyTemplate(){
 
      $('.finishDelete').on('click', function(e) {
         e.preventDefault();
-        var editNum = $(this).siblings('.newEmployeeNumber').val();
+        var editNum = $(this).parent().siblings('.newEmployeeNumber').val();
         for (i = 0; i < employeeData.length; i ++){
             if (employeeData[i].employeeNumber == editNum){
             var searchTerm = editNum;
@@ -70,10 +70,10 @@ function applyTemplate(){
 
    function eraseSpace() {
     employeeData.forEach(function(employee){
-     var tempName = employee.employeeName
+     var tempName = employee.employeeName;
      var newStr = tempName.replace(/\s+/g, '_');
      employee.employeeName = newStr;
-    })
+    });
    }
 
 });

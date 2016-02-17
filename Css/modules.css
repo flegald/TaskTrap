@@ -55,8 +55,8 @@ header h1 {
 
 
 #printContain {
-  width: 25%;
-  height: 100px;
+  width: 33%;
+  height: 56px;
   position: absolute;
   top: 0;
   right: 0px;
@@ -64,29 +64,36 @@ header h1 {
 }
 
 .finalButton {
+  position: relative;
   display: inline;
   margin: -10px 0 -15px 0;
   padding: 0;
-  width: 100%;
+  width: 45%;
   height: 47%;
   text-align: center;
   vertical-align: middle;
-  font-size: 1.4em;
+  font-size: 1.2em;
   border-bottom: 1px solid #fff;
 }
 
 #saveButton {
   border-bottom: 1px solid #639DB9;
-  line-height: 25px;
+  line-height: 31px;
   cursor: pointer;
+}
+#saveButton p {
+  width: 50%;
+  float: left;
+  border-right: 1px solid #fff;
 }
 
 #printButton {
-  line-height: 24px;
+  line-height: 31px;
   cursor: pointer;
 }
 #printButton p {
-  border-top: 1px solid #fff;
+  width: 45%;
+  float: right;
 }
 
 #printIcon {
@@ -131,6 +138,8 @@ header h1 {
   background-color: transparent;
   color: #fdb80f;
   font-size: 1.5em;
+  margin: 0 auto;
+  border-radius: 0;
 }
 
 /*=====================================  TASK LISTS  ===============*/
@@ -212,6 +221,10 @@ header h1 {
 .reviewListComplete li {
   font-size: .8em;
   padding: 2px;
+}
+
+#commentInput {
+  color: #000;
 }
 
 /*=============================  MANAGERS OPTIONS ===================*/
@@ -476,6 +489,7 @@ header h1 {
   width: 80%;
   margin: 0;
   padding: 0;
+  margin: 0 auto;
 }
 
 #addNewTask {
@@ -484,8 +498,8 @@ header h1 {
   border: 2px solid #fdb80f;
   width: 80%;
   height: 30px;
-  margin-top: 20px;
   padding: 0;
+  margin: 20px auto 0 auto;
 }
 
 .editTaskButton {
