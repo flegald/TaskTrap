@@ -17,3 +17,7 @@ ul {
      -webkit-border-radius: 0;
      border-radius: 0;
 }
+
+body > div.ui-loader.ui-corner-all.ui-body-a.ui-loader-default {
+  display: none;
+}
